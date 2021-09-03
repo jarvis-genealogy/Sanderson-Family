@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="content\styles\generalstyles.css">
+
+<title>Sanderson family</title>
+
+<script language="JavaScript">
+
+function popup(FILE, FEATURES) { 
+    CONTENT = "<HTML><HEAD><TITLE>Enlarged image</TITLE></HEAD>" +
+              "<BODY><CENTER><FORM><INPUT TYPE='BUTTON' VALUE='Close'" +
+               "onClick='window.close()'></FORM><P><IMG SRC='" + FILE + 
+               "' BORDER=0>" + "</CENTER>"+ "</BODY></HTML>";
+              pop = window.open("","",FEATURES);
+              pop.document.open();
+              pop.focus();
+              pop.document.write(CONTENT);
+              pop.document.close();
+
+} 
+
+
+function view (imagefile) { 
+   var winShell
+   var atext, btext, ctext;
+   var fso;
+   var quoteS = String.fromCharCode(34);
+
+   atext=self.location.href; // the current page path
+   fso  = new ActiveXObject("Scripting.FileSystemObject"); 
+   btext = fso.GetParentFolderName(atext); // path without the page name
+   delete(fso);
+
+   atext = quoteS + "\\" + btext + exefile  + quoteS; // add the image relative path and put in quotes
+   atext = atext.replace( /\//g, '\\' ); // make sure the slashes are the right way round
+   ctext = "btext = " + btext + " atext = " + atext;
+   // alert(ctext);
+
+   atext = "rundll32.exe %SystemRoot%\system32\shimgvw.dll,ImageView_Fullscreen";
+   // add the image path
+   atext = atext + "\\" + imagefile;
+   alert(text);
+
+   // Run the given executable
+   winShell = new ActiveXObject("WScript.Shell");
+   // winShell.Run(atext);
+   delete(winShell);
+}
+
+</script>
+
+</head>
+
+<title>Sanderson family</title>
+
+<body>
+
+<H1><CENTER>Sanderson family</CENTER></H1>
+<H3>A record of the Sanderson family in Australia</H3>
+<br>
+
+<p style="background: Gainsboro; border: 1px solid #0066FF; padding:8px">
+
+<a href="content\images\Sanderson-crest.jpg" target="_blank"><img src="content\images\Sanderson-crest.jpg" height = 310 ALIGN="left" ALT="Sanderson family coat of arms" border=1></a>
+This record was compiled to provide information for the descendants of Verner Stuart Leslie Sanderson and Gertrude Spurling of Port Augusta.
+<br><br>
+We are fortunate to have some glimpse into the personal lives of our ancestors and I have made a small contribution to this by making the family tree easier to navigate and understand.
+<br><br>
+The tree is arranged with links to documents and other material of interest. Some of the documents are transcribed from typed copy. Together with these are researched material including images or other informative literature that gives us an insight into their lives.
+<br><br>
+There is much more information that could be gathered for the many families involved, mainly because most of them were so large. This tree is compiled primarily for, but not limited to, the interests of the families descended from Verner and Gertrude Sanderson of Port Augusta. Material can be added as it is discovered.
+<br><br>
+Lynn Jarvis<br>
+Son of Shirley and Keith and Grandson to Verner and Gertrude<br>
+Website created, August 2020
+</p>
+
+<br><br>
+
+<h3>The family tree</h3>
+
+<p style="background: palegoldenrod; border: 1px solid #0066FF; padding:8px">
+<a href="content\tree.html" target="blank"><b>The interactive Sanderson family tree</b></a><br><br>
+You can explore the tree by clicking the link above.
+The tree was compiled from the research and accounts of family members, namely Robert, Shirley, Aunty Ella and cousin Douglas, as well as details of the McCoy family by Margaret Taylor and research by Eileen Laing from Spring Gardens, North Shields, Tyne and Wear. Where available, letters, explanations, photographs and other material are retrieved by clicking on the particular family member.
+you may notice blue squares at the left margin. Move the cursor over these and you will see thumbnail images or extracts from letters or other sources. Click on the square to bring up the particular image or document. Click the "Back" button at the top of the browser to return to the tree. 
+</p>
+
+<br><br>
+
+<h3>Family history</h3>
+
+<p style="background: palegoldenrod; border: 1px solid #0066FF; padding:8px">
+As material is discovered, I will add it here.<br><br>
+This is a family history compiled by Robert Sanderson (my Uncle Bob), in January 1969.<br>
+
+<a href="content\records\Sanderson-History_RLS.pdf" target="blank">Sanderson family 1969</a>
+<br><br>
+In his history he refers at the outset to Aunty Ella's writings and intended that should be read together.
+<br>
+Ella was Vern's sister and Aunty to the family. Their father was Francis Clement Villiers Sanderson and mother Emma Tortoise. Francis Clement Villiers was son of Francis Sanderson, the subject of Ella's writing, who originally came to Australia in 1852 as Ella details. This personal account adds depth and detail to other records.
+<br>
+<a href="content\records\ella-2.pdf" target="blank">Aunty Ella's writings</a>
+<br><br>
+Of great interest is a letter to my mother Shirley from Eileen Laing who lived in Spring Gardens, North Shields, Tyne and Wear. She researched the details of Ella's writings by personally visiting Libraries and Records Offices and has made some interesting corrections. She has also added great detail about heraldry and the family shield. It's most useful to read her letter side by side with Ella's writings. The "Dad" she is referring to is father of Ella and Vern, Francis Clement Villiers Sanderson.
+<br>
+<a href="content\records\Eileen-Laing.pdf" target="blank">Dad's family history - the Sandersons</a>
+<br><br>
+Following is a brief history of Francis Sanderson of Kilingworth and details of his six children. The youngest, Francis Clement Villiers Sanderson, was father to Verner Stuart Leslie who in turn, together with Gertrude, raised a family of seven in Port Augusta. The source is presumably Aunty Ella as an addition to her more extensive history, although it was possibly created by my mother Shirley.
+<br>
+<a href="content\records\Ella.pdf" target="blank">A brief history of Francis Sanderson</a>
+<br><br>
+This is a brief account of the Standpipe Hotel, which was leased by Aunty Ella and Murray Munro from about 1927. From about Vern and Gert stayed there with the family, after leaving the Glen Vern property.
+<br>
+<a href="content\records\standpipe.pdf" target="blank">The Standpipe Hotel</a>
+<br><br>
+Here is a transcript, with modifications, of portions of a book compiled by Douglas Sanderson in 1992 regarding the origins of Alexander Frederick Sanderson. Here you will find more detailed information relating back to the typewritten records of my Uncle Bob and his Aunty Ella.
+<br>
+<a href="content\records\douglas_sanderson.pdf" target="blank">Sanderson family - ancestors and descendants</a>
+<br><br>
+My cousin Michael Sanderson compiled a comprehensive 
+<a href="https://www.facebook.com/notes/michael-sanderson/anzac-2020/1468337863337884" target="_blank" rel="noopener noreferrer">Facebook note</a> for ANZAC day 2020 including documents with the service history of his father
+<a href="content\records\Francis-Bernard-Sanderson.pdf" target="blank">Francis</a>, his father in law 
+<a href="content\records\Gordon-Hunt.pdf" target="blank">Gordon Hunt</a>, his brother 
+<a href="content\records\Donald-Phillips.pdf" target="blank">Donald</a> and nephew 
+<a href="content\records\Matthew-Brocklehurst.pdf" target="blank">Matthew</a>. These include detailed information and many interesting pictures
+<br><br>
+</p>
+
+<br>
+
+<h3>References</h3>
+
+<TABLE ALIGN=CENTER BORDER=1 CELLSPACING=1 CELLPADDING=10>
+<TR>
+
+<TD>
+<ul>
+<li><a href="https://www.catalog.slsa.sa.gov.au/record=b1144313~S1" target="blank">Sanderson family : ancestors & descendants of Alexander Frederick Sanderson</a>
+<br>Compiled by Douglas Sanderson. 1992
+</li>
+</ul>
+</TD>
+
+</TABLE>
+
+<h3>Useful Genealogy websites</h3>
+
+<TABLE ALIGN=CENTER BORDER=1 CELLSPACING=1 CELLPADDING=10>
+<TR>
+
+<TD>
+<ul>
+<li><a href="https://www.werelate.org" target="blank">https://www.werelate.org</a></li>
+<li><a href="https://gw.geneanet.org" target="blank">https://gw.geneanet.org</a></li>
+<li><a href="https://www.genealogy.com" target="blank">https://www.genealogy.com</a></li>
+<li><a href="https://www.geni.com" target="blank">https://www.geni.com</a></li>
+<li><a href="https://www.ancestry.com" target="blank">https://www.ancestry.com</a></li>
+<li><a href="https://www.myheritage.com" target="blank">https://myheritage.com</a></li>
+<li><a href="https://www.wikitree.com/wiki/Sanderson-3812">WikiTree</a></li>
+</ul>
+</TD>
+
+</TABLE>
+
+
+
+
+<br><br>
+
+</body>
+
+</html>

@@ -1,0 +1,781 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="styles\generalstyles.css">
+
+<title>Sanderson family tree</title>
+
+<script language="JavaScript">
+
+function popup(FILE, FEATURES) { 
+    CONTENT = "<HTML><HEAD><TITLE>Enlarged image</TITLE></HEAD>" +
+              "<BODY><CENTER><FORM><INPUT TYPE='BUTTON' VALUE='Close'" +
+               "onClick='window.close()'></FORM><P><IMG SRC='" + FILE + 
+               "' BORDER=0>" + "</CENTER>"+ "</BODY></HTML>";
+              pop = window.open("","",FEATURES);
+              pop.document.open();
+              pop.focus();
+              pop.document.write(CONTENT);
+              pop.document.close();
+
+} 
+
+
+function view (imagefile) { 
+   var winShell
+   var atext, btext, ctext;
+   var fso;
+   var quoteS = String.fromCharCode(34);
+
+   atext=self.location.href; // the current page path
+   fso  = new ActiveXObject("Scripting.FileSystemObject"); 
+   btext = fso.GetParentFolderName(atext); // path without the page name
+   delete(fso);
+
+   atext = quoteS + "\\" + btext + exefile  + quoteS; // add the image relative path and put in quotes
+   atext = atext.replace( /\//g, '\\' ); // make sure the slashes are the right way round
+   ctext = "btext = " + btext + " atext = " + atext;
+   // alert(ctext);
+
+   atext = "rundll32.exe %SystemRoot%\system32\shimgvw.dll,ImageView_Fullscreen";
+   // add the image path
+   atext = atext + "\\" + imagefile;
+   alert(text);
+
+   // Run the given executable
+   winShell = new ActiveXObject("WScript.Shell");
+   // winShell.Run(atext);
+   delete(winShell);
+}
+
+</script>
+
+
+</head>
+
+<body>
+
+<br>
+
+<H1><CENTER>Sanderson family tree</CENTER></H1>
+<H3>The Sanderson family in Australia</H3>
+<br>
+<CENTER>
+<IMG  SRC="images\Sanderson-crest-colour.jpg" height=320 ALT="Sanderson family coat of arms" border=1>
+</CENTER>
+
+<br><br>
+
+
+<ol>
+  <li>Henry SANDERSON 1705–1776 mm Margaret UNKNOWN ?-1762
+  	<ol>
+	  <li>Eleanor SANDERSON</li>
+	  <li>Mary SANDERSON</li>
+      <li>Francis SANDERSON</li>
+      <li>Nathaniel SANDERSON m Sarah UNKNOWN 1757-?</li>
+	  <li>William SANDERSON</li>
+  	  <li>Elizabeth SANDERSON 1736-</li>
+
+	  <li>George SANDERSON 1742–1823 m Sarah SANDERSON 1757-
+	  <ol>
+			<li>Hannah SANDERSON ?-1775</li>
+			<li>Francis SANDERSON ?-1791</li>
+			<li>Henry SANDERSON 1776–1837</li>
+			<li>Robert SANDERSON 1779-?</li>
+			<li>Francis SANDERSON 1780–1781</li>
+			<li>George SANDERSON 1782–1793</li>
+			<li>Margaret SANDERSON 1785-?</li>
+			<li>Hannah SANDERSON 1787-?</li>
+			<li>Sarah SANDERSON 1789-1791</li>
+			
+			<a class="screen" href="images\Francis-SANDERSON-1792.jpg">
+			<img STYLE="position:absolute; left:-36px; width = 16; height=16;"
+			src="images\blue_16x16.jpg" alt="Click to enlarge">
+			<b><img src="images\Francis-SANDERSON-1792.jpg" height=320></b>
+			</a>
+			
+			<a class="screen" href="images\hannah-brown.jpg">
+			<img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+			src="images\blue_16x16.jpg" alt="Click to enlarge">
+			<b><img src="images\hannah-brown.jpg" height=320></b>
+			</a>
+			
+			<li>
+			<a href = "records\sanderson-brown-extract.pdf">Francis SANDERSON (16 Sep 1792 – 22 Feb 1864) m 1820 Hanna BROWN (15 Jan 1791 – 4 Nov 1862)</a>
+			
+			  <ol>
+				<li><a href = "records\jane-extract.pdf">Jane Maria SANDERSON 1821-1854</a></li>
+				<a class="screen" href="images\McCoy_PRG-1337-5-2_enlarged_deoldify.png">
+				<img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+				src="images\blue_16x16.jpg" alt="Click to enlarge">
+				<b><img src="images\McCoy_PRG-1337-5-2.jpg" height=320></b>
+				</a>
+				<li><a href="records\annie-extract.pdf" >Annie SANDERSON ~1830-1902</a> m <a href="records\Alexander-McCoy.pdf">Alexander McCOY 1821-1895</a>
+				  <ol>
+				  	<a class="screen" href="images\francis-sanderson-mccoy.jpg">
+				    <img STYLE="position:absolute; left:-18px; width = 16; height=16;" 
+					src="images\blue_16x16.jpg" alt="Click to enlarge">
+				    <b><img src="images\francis-sanderson-mccoy.jpg" height=320></b>
+				    </a>
+				  <li><a href="https://www.ancestry.ca/genealogy/records/francis-sanderson-mccoy-24-fzwj35">Francis Sanderson McCOY 1863-1903</a>
+				  	  <ol>
+					  with Isabella Jane GUY
+					    <li>Frank McCOY 1888 - m Unknown
+						  <ol>
+							<li>Thomas Frank McCOY 1909-1979 m Theresa J M MINCHELLA 1913-1955
+							  <ol>
+							    <li>Margaret T McCOY 1935</li>
+								<li>Gerardina M McCOY 1937 m Christopher L McNEFF 1935
+								  <ol>
+								    <li>Teresa McNEFF 1957</li>
+									<li>Susan Geradine McNEFF 1958 m David Michael PHILIPPART
+									  <ol>
+									    <li>Sarah Lee PHILIPPART</li>
+									    <li>Jack PHILIPPART</li>
+									  </ol>
+									</li>
+								    <li>Alexander G McNEFF 1960 m Rachel L MASON</li>
+								    <li>Nicola A McNEFF 1963 m Richard James HUMPHREY 1978</li>
+								    <li>Penelope J McNEFF 1964 m Robert P KIEFT 1961</li>
+								  </ol>
+								</li>
+								<li>Mary Frances McCOY 1948</li>
+							  </ol>
+							</li>							
+						  </ol>
+						</li>
+					  </ol>
+					  
+					  <ol>Married Isabella Margaret Olive BARNETT 1871-1955</a>
+					    <li><a href="https://www.ancestry.ca/genealogy/records/francis-mccoy-24-122ffjt">Francis McCOY 1894-1975 m Edna Kathleen RYAN 1902-1972</a>
+					    <a class="screen" href="images\Francis-McCoy.jpg">
+				        <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+						src="images\blue_16x16.jpg" alt="Click to enlarge">
+				        <b><img src="images\Francis-McCoy.jpg" height=320></b>
+				        </a>
+						  <ol>
+						    <li>Isabella Margaret Mary McCoy 1939 - m James Ross TAYLOR 1934-</li>
+						  <ol>
+							 <li>Janet Ann TAYLOR -1965</li>
+							 <li>Alan James TAYLOR 1966 m Theresa-Lee BEVAN 1968
+							   <ol>
+								  <li>Shayna Janet-Lee TAYLOR 1994 m PATERSON
+								    <ol>
+									  <li>Larni Lee TAYLOR-PATERSON 2018</li>
+									</ol>
+								  </li>
+							   </ol>
+							</li>
+						  </ol>
+						</ol>
+						<li>Alexander Henry McCOY 1898-1951 m Helen </li>
+						  <li>William McCOY 1898-1951 m Isabella Elizabeth ("Pat") POPE 1891-1971
+						    <ol>
+							  <li>Ron(adopted) 1937-2012</li>
+							</ol>
+						</li>
+					  </ol>
+					</li>
+					<li>Arthur Charles McCOY 1865-1892</li>
+				  </ol>
+				</li> <!-- end Annie SANDERSON - Alexander McCOY -->
+				
+				<li>J Henry SANDERSON 1825-</li> <!-- check -->
+				<li>William SANDERSON 1831-1871</li>
+				
+				<a class="screen" href="images\Frederick-James-Sanderson.jpg">
+				  <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+				  src="images\blue_16x16.jpg" alt="Click to enlarge">
+				  <b><img src="images\Frederick-James-Sanderson.jpg" height=320 ></b>
+				</a>				
+				
+				<li><a href="records\Frederick-James-Sanderson.pdf">Frederick James SANDERSON 1834-1903</a> m Sarah YOUNGHUSBAND 1838 - 30 Apr 1885
+				  <ol>
+				  
+				    <li>Annie Louisa SANDERSON 1857- m Henry Debonaire Gardener HAGGARD
+					  <ol>
+					    <li>Frederick Henry Debonaire HAGGARD 1886-</li>
+					    <li>Francis Debonaire HAGGARD 1888-1937</li>
+					    <li>Violet Cecile Debonaire HAGGARD 1891-1957</li>
+					    <li>William Annie Debonaire HAGGARD 1896- m ? unknown
+					      <li>Patricia Debonaire HAGGARD 1939</li>
+					    </li>
+					  </ol>
+					</li>
+					
+				    <li>Edith Ferguson SANDERSON 1858 m unknown Mayne</li>
+				    <li>William Younghusband SANDERSON 1860–1883</li>
+				    <li>Francis Villiers SANDERSON 1862–1938 m Fannie Augusta KLINGENDER 1859-1946
+					  <ol>
+					    <li>Beryl Olive SANDESON 1889-</li>
+					    <li>Marjorie Villiers SANDERSON 1890-</li>
+					    <li>Kenneth Francis Villiers SANDERSON 1895-1973 m Evelyn Kate JOHNS 1897-
+					      <li>Kenneth Villiers SANDERSON 1921-</li>
+					      <li>Peter Robyn SANDERSON 1926-</li>
+					      <li>John Gavin SANDERSON 1929-</li>
+						</li>
+					    <li>Valerie Villiers SANDERSON 1898-</li>
+					    <li>Audrey Villiers SANDERSON 1899-</li>
+					  </ol>
+					</li>
+					<li>Mabel Olive SANDERSON 1874-1886</li>
+					<li>Helen Lilias SANDERSON 1878-1925</li>
+				  </ol>
+				</li>
+				<a class="screen" href="images\FCV_Sanderson_x2.jpg">
+				  <img STYLE="position:absolute; left:-36px; width = 16; height=16;"
+				  src="images\blue_16x16.jpg" alt="Click to enlarge">
+				  <b><img src="images\FCV_Sanderson_x2.jpg" height=320></b>
+				</a>
+				<a class="screen" href="images\emma-stanton-tortoise_2.jpg">
+				  <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+				  src="images\blue_16x16.jpg" alt="Click to enlarge">
+				  <b><img src="images\emma-stanton-tortoise_2.jpg" height=320></b>
+				</a>
+				<li><a href="https://gw.geneanet.org/xmullen?lang=en&p=franis+clement+villiers&n=sanderson">Francis Clement Villiers SANDERSON</a> 1840-1918 m <a href="images\Emma-Stanton-Tortoise_Genealogy.png">Emma Stanton TORTOISE</a><a href= "https://www.ancestry.co.uk/genealogy/records/emma-stanton-tortoise-24-xhrlj"> 1845-1911</a> 
+				  <ol>
+				  
+				    <a class="screen" href="images\standpipe_postcard.jpg">
+				    <img STYLE="position:absolute; left:-18px; width = 16; height=16;" src="images\blue_16x16.jpg" alt="Click to enlarge">
+				    <b><img src="images\standpipe_postcard.jpg" height=320></b>
+				    </a>		
+					<li><a href= "records\ella-2.pdf">Ella Maude Beatrice SANDERSON</a> 1870-1962 m Murray MUNRO</li>
+					
+					<li><a href="https://gw.geneanet.org/xmullen?lang=en&p=may+eveline&n=sanderson">May Eveline SANDERSON 1872-1874</a></li>
+					
+					<li><a href="https://gw.geneanet.org/xmullen?lang=en&n=sanderson&oc=0&p=arthur+francis+villiers">Arthur Francis Villiers SANDERSON 1874-1915 m Emily Gertrude MUNDEE 1871-1938</a>
+					  <ol>
+				        <a class="screen" href="images\dorothy-jean-owen-sanderson.jpg">
+				        <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+						src="images\blue_16x16.jpg" alt="Click to enlarge">
+				        <b><img src="images\dorothy-jean-owen-sanderson.jpg" height=320 ></b>
+						</a>
+						<li>Dorothy Jean SANDERSON 1902-2003 m John Norman OWEN 1892-1973</li>
+						<li>Beatrice May SANDERSON 1905-1968</li>
+						<li>Joice Doreen SANDERSON 1907-1985</li>
+						<li>Mabel Daphne SANDERSON 1911-1999</li>
+						<li>Gwenneth Irene SANDERSON 1913-1994</li>
+						<li>Arthur Francis Villiers SANDERSON 1910-1913</li>
+					  </ol>
+					</li>
+					
+					<li><a href="https://gw.geneanet.org/xmullen?lang=en&p=herbert+charles+sutton&n=sanderson">Herbert Charles Sutton SANDERSON</a> 15 Jun 1876 - 1936</li>
+					<li><a href="https://gw.geneanet.org/xmullen?lang=en&p=george+clement+ogilvie&n=sanderson">George Clement Ogilve SANDERSON</a> 1878-1968 m Evelyn (Bobby) McKIERN -1968</li>
+					<a class="screen" href="images\Stanton-James-Edward-SANDERSON.jpg">
+					<img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					src="images\blue_16x16.jpg" alt="Click to enlarge">
+					<b><img src="images\thumbs\Stanton-James-Edward-SANDERSON_thumb.jpg"></b>
+					</a>	
+					<li><a href="https://gw.geneanet.org/xmullen?lang=en&p=stanton+james+edward&n=sanderson">Stanton James Edward SANDERSON</a> <a href="https://www.ancestry.com.au/genealogy/records/stanton-james-edward-sanderson-24-xhz60">12 May 1880 - 10 Mar 1978</a> m Annette Russel WOOD -1977
+					  <ol>
+						<li>James Francis SANDERSON 1909-1999</li>
+						<li>Harry Charles SANDERSON 1911-1999</li>
+						<li>Roger Russel SANDERSON 1939-1994</li>
+						<li>Nancy Adair SANDERSON 1915-2006</li>
+						<li>John Verner SANDERSON 1919-1934</li>
+					  </ol>
+					</li>
+					
+					<a class="screen" href="images\Alexander-Frederick-SANDERSON.jpg">
+					<img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					src="images\blue_16x16.jpg" alt="Click to enlarge">
+					<b><img src="images\Alexander-Frederick-SANDERSON.jpg" height=320></b>
+					</a>				
+
+					<li><a href="records\alexander-frederick.pdf">Alexander Frederick ("Fred") SANDERSON 1882-1945</a> m Augusta Ellen MADLAND 1893-
+					  <ol>
+						<li>Eunice SANDERSON</li>
+						<li>Leslie SANDERSON</li>
+						<li>Laurel SANDERSON</li>
+						<li>Mavis SANDERSON</li>
+						<li>Clement SANDERSON</li>
+						<li>Gladys SANDERSON</li>
+						<li>Joan SANDERSON</li>
+						<li><a href="records\douglas_sanderson.pdf">Douglas SANDERSON</a></li>
+						<li>Dorothy SANDERSON</li>
+					  </ol>
+					</li> <!-- end Alexander Frederick ("Fred") SANDERSON  - Augusta Ellen MADLAND -->
+					
+					<li><a href="https://gw.geneanet.org/xmullen?lang=en&p=lindsay+mallett&n=sanderson">Lindsay Mallett SANDERSON</a> 1884-1952 m Elsie Susan BEAMES 1884-1953
+					  <ol>
+						<a class="screen" href="images\enid-sanderson.jpg">
+					    <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+						src="images\blue_16x16.jpg" alt="Click to enlarge">
+					    <b><img src="images\enid-sanderson.jpg" height=320></b>
+					    </a>				
+						<li><a href ="https://www.genealogy.com/ftm/f/r/e/Ray-French/WEBSITE-0001/UHP-0273.html">
+						  Enid Marjorie SANDERSON 1906-1958 m William John Lawrence FRENCH 1904-1979</a>
+						  <ol>
+						    <li>Donald Lawrence FRENCH 1929-1995 m Clarice Joan MITCHELL</li>
+						    <li>Robert Glen FRENCH m June Isabel DEEGAN</li>
+						    <li>Walter James Lindsay FRENCH m Alice Joy McKERLIE</li>
+							<li>Geoffrey William FRENCH m Judith Ann BURTON</li>
+							<li>Hurtle George FRENCH m Gillian CUNNINGHAM</li>
+							<li>Malcolm John FRENCH 1936-2006 m Beverly Rhonda THOMSON</li>
+							<li>David FRENCH 1938-1939</li>
+							<li>Margaret Joy FRENCH m William Llewellen HAMP</li>
+							<li>Thomas Murray FRENCH m Barbara Beryl MARTLLEW</li>
+							<li>Ian Alfred FRENCH m Shirley Anne MATTHEW</li>
+						  </ol>
+						</li>
+						
+						<a class="screen" href="images\lorna-jean-sanderson.jpg">
+					    <img STYLE="position:absolute; left:-18px; width = 16; height=16;" 
+						src="images\blue_16x16.jpg" alt="Click to enlarge">
+					    <b><img src="images\thumbs\lorna-jean-sanderson-thumb.jpg"></b>
+					    </a>
+						
+						<li><a href="https://www.geni.com/people/Lorna-Sanderson/6000000004289778187">Lorna Jean SANDERSON </a>1910-2005 m <a href="https://www.geni.com/people/Norman-Greenfield/6000000004286214416">Norman Lindsay GREENFIELD</a>
+						  <ol>
+						    <li>Alan Anthony GREENFIELD m </li>
+							<li>Peter Lindsay GREENFIELD</li>
+						  </ol>
+					    </li>
+						
+						<li><a href="https://www.genealogy.com/ftm/f/r/e/Ray-French/WEBSITE-0001/UHP-0116.html">Elsie Emma Beatrice SANDERSON 1924-2010 m Sydney BARTSCH</a>
+						  <ol>
+						    <li>Brenda Faye BARTSCH m John Norrie Guthleben</li>
+							  <li>Reginald Bruce BARTSCH</li>
+						    </li>
+						  </ol>
+						</li>
+					  </ol>
+					</li> <!-- end Lindsay Mallett SANDERSON 1884-1952 m Elsie Susan BEAMES 1884-1953 -->
+					
+					<a class="screen" href="images\Verner-Gertrude_1924_x2.jpg">
+					<img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					src="images\blue_16x16.jpg" alt="Click to enlarge">
+					<b><img src="images\Verner-Gertrude_1924_x2.jpg" height = 320></b>
+					</a>
+					
+					<li><a href="images\Sanderson-Spurling.jpg">Verner Stuart Leslie SANDERSON 1887-1970
+					m Gertrude SPURLING 1902-1869</a>
+					  <ol>
+					    </a>		
+						<li><a href="images\Sanderson-Belford.jpg">Francis Bernard SANDERSON 1926-2004 m Nancy BELFORD 1927</a>
+						  <ol>
+						  <ol>with Faye Elaine PHILLIPS
+					        
+							<!--
+							<a class="screen" href="https://www.facebook.com/margeret.brocklehurst">
+					        <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					        src="images\blue_16x16.jpg" alt="Click to enlarge">
+					        <b><img src="images\Marg and Peter.JPG" height = 320></b>
+					        </a>
+							-->
+							
+							<li>Margeret 1949 m Peter BROCKLEHURST
+							  <ol>
+							  
+							<!--
+							    <a class="screen" href="https://www.facebook.com/matthew.brocklehurst.359"
+							    target="_blank" rel="noopener noreferrer">
+					            <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					            src="images\blue_16x16.jpg" alt="Click to enlarge">
+					            </a>	
+								
+								https://www.facebook.com/krysta.brocklehurst
+								About Krysta
+								Children:
+								William James 
+								Samuel Darcy
+								
+								
+							-->
+							    <li>Matthew BROCKLEHURST m Krysta LONG
+								  <ol>
+								    <li>William James</li>
+								    <li>Samuel Darcy</li>
+								  </ol>
+								</li>
+								<li>Rachel BROCKLEHURST</li>
+							  </ol>
+							</li>
+							</li>
+							<li>
+							
+							<!--
+                              <a class="screen" href="images\Vietnam Memorial, Donald.jpg" 
+							  target="_blank" rel="noopener noreferrer">
+					          <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					          src="images\blue_16x16.jpg" alt="Click to enlarge">
+					          </a>
+							-->
+							  
+							  Donald 1949 m Sheryl
+							  <ol>
+								<li>Chantel</li>
+								<li>Simone</li>
+								
+							<!--
+							    <a class="screen" href="https://www.facebook.com/kristy.phillips1"
+							    target="_blank" rel="noopener noreferrer">
+					            <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					            src="images\blue_16x16.jpg" alt="Click to enlarge">
+					            </a>		
+							-->
+								
+								<li>Kristy
+								  <ol>
+								    <li>Sophie</li>
+								  </ol>
+								</li>
+							  </ol>
+							</li>
+						  </ol>
+							
+							<li>
+							<!--
+							<a class="screen" href="https://www.facebook.com/unsung.suechee"
+							target="_blank" rel="noopener noreferrer">
+					        <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					        src="images\blue_16x16.jpg" alt="Click to enlarge">
+					        <b><img src="images\michael-sanderson.jpg" height = 320></b>
+					        </a>		
+							
+							<a href="records\michael-anzac-2020.pdf">Michael Francis SANDERSON</a>
+							-->
+							Michael Francis SANDERSON 1953 m Betty-anne CREEK 1955
+							  <ol>
+								<li>Tanya Marie 1977</li>
+								
+							<!--
+								<a class="screen" href="https://www.facebook.com/tracy.sanderson.372"
+								target="_blank" rel="noopener noreferrer">
+					            <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					            src="images\blue_16x16.jpg" alt="Click to enlarge">
+					            </a>
+							-->
+								
+								<li>Tracy 1979</li>
+								
+							<!--
+								<a class="screen" href="https://www.facebook.com/damephyllis.dp"
+								target="_blank" rel="noopener noreferrer">
+					            <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					            src="images\blue_16x16.jpg" alt="Click to enlarge">
+					            </a>
+							-->
+								
+							    <ol>Remarried Phyllis HUNT 1963
+								  <li>Tess 1988</li>
+							    </ol>
+							  </ol>
+							</li>
+							
+							<!--
+							    <a class="screen" href="https://www.facebook.com/julie.sanderson.9883"
+								target="_blank" rel="noopener noreferrer">
+					            <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					            src="images\blue_16x16.jpg" alt="Click to enlarge">
+					            </a>
+							-->
+							
+							<li>Wayne Stuart SANDERSON 1955 m Julie Ann Harris 1957
+							  <ol>
+							  
+							<!-- Kristy Sanderson(Judd)
+							    <a class="screen" href="https://www.facebook.com/scott.kristy.3"
+								target="_blank" rel="noopener noreferrer">
+					            <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					            src="images\blue_16x16.jpg" alt="Click to enlarge">
+					            </a>
+							-->
+								
+								<li>Kristy Renea 1981</li>
+								<li>Belinda Jade 1982</li>
+								<li>Stephen Wayne 1986</li>
+							  </ol>
+							</li>
+							
+							<li>Stephen SANDERSON 1959</li>
+							<li>Tanya SANDERSON 1959</li>
+							
+							<!--
+							<a class="screen" href="https://www.facebook.com/brad.sanderson.3152"
+							target="_blank" rel="noopener noreferrer">
+					        <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					        src="images\blue_16x16.jpg" alt="Click to enlarge">
+					        </a>	
+							-->
+														
+							<li>Bradley John SANDERSON 1963 m Katherine Lynne WILSON
+							  <ol>
+								<li>Rebecca Jai 1991</li>
+							  </ol>
+							</li>
+							
+						  </ol>	
+						</li> <!-- end Francis Bernard SANDERSON - Nancy BELFORD -->
+						
+						<li><a href="images\Sanderson-Jarvis.jpg">Shirley Mary SANDERSON 1927-2009 m Keith Scott JARVIS 1923-2015</a>
+						  <ol>
+						  
+							<!--
+						  	<a class="screen" href="https://www.facebook.com/lynn.jarvis.1650"
+							target="_blank" rel="noopener noreferrer">
+					        <img STYLE="position:absolute; left:-36px; width = 16; height=16;"
+					        src="images\blue_16x16.jpg" alt="Click to enlarge">
+					        </a>	
+
+						  	<a class="screen" href="https://www.facebook.com/carol.cayley"
+							target="_blank" rel="noopener noreferrer">
+					        <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					        src="images\blue_16x16.jpg" alt="Click to enlarge">
+					        </a>	
+							-->
+						  
+						    <li>Lynn Robert JARVIS 1949 m Carol Ann BUNN</a> 1955
+							  <ol>
+								<li>Robert Scott JARVIS 1984</li>
+							  </ol>
+							</li>
+							
+							<!--
+						  	<a class="screen" href="https://www.facebook.com/csanderson"
+							target="_blank" rel="noopener noreferrer">
+					        <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					        src="images\blue_16x16.jpg" alt="Click to enlarge">
+					        </a>	
+							-->
+						  							
+						    <li>Coralie Gail JARVIS SANDERSON 1953
+							  <ol>
+							<!--
+						  	      <a class="screen" href="https://www.facebook.com/early.bird.775"
+							      target="_blank" rel="noopener noreferrer">
+					              <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					              src="images\blue_16x16.jpg" alt="Click to enlarge">
+					              </a>	
+							-->   with partner Graham BIRD
+								  <li>
+								  Elly BIRD 1976
+								  </li>
+							<!--
+						  	      <a class="screen" href="https://www.facebook.com/jane.gardner.10"
+							      target="_blank" rel="noopener noreferrer">
+					              <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					              src="images\blue_16x16.jpg" alt="Click to enlarge">
+					              </a>	
+							-->
+								  with partner Stephen GARDNER
+								  <li>
+								  Jane GARDNER 1983 m Joel BROWN 2016
+								    <ol>
+									  <li>
+									  Felix Alexander 2018
+									  </li>
+								    </ol>
+								  </li>
+							  </ol>
+							</li>
+							
+							<!--
+						  	<a class="screen" href="https://www.facebook.com/profile.php?id=100004522819487"
+							target="_blank" rel="noopener noreferrer">
+					        <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					        src="images\blue_16x16.jpg" alt="Click to enlarge">
+					        </a>	
+							-->
+							
+						    <li>Ian Scott JARVIS 1961 m Cathryn Anne ABBOTT-YOUNG 1963
+							  <ol>
+							  
+							<!--
+						  	    <a class="screen" href="https://www.facebook.com/alice.jarvis.10"
+							    target="_blank" rel="noopener noreferrer">
+					            <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					            src="images\blue_16x16.jpg" alt="Click to enlarge">
+					            </a>	
+							-->
+								<li>Alice Rose JARVIS 1992</li>
+							<!--
+								https://www.facebook.com/emmy.jarvis
+							-->
+								
+								<li>Emma May JARVIS 1997</li>
+								
+							<!--
+								<a class="screen" href="https://www.facebook.com/annie.jarvis.31"
+							    target="_blank" rel="noopener noreferrer">
+					            <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					            src="images\blue_16x16.jpg" alt="Click to enlarge">
+					            </a>	
+							-->
+							    <ol>Remarried Anne Warnes BLACKMAN 
+								    <li>Emma Kate BLACKMAN 1991</li>
+						        </ol>
+							  </ol>
+							</li>
+						  </ol>
+						 </li> <!-- end Shirley Mary SANDERSON - Keith Scott JARVIS -->
+						 
+						<li><a href="images\Sanderson-OBrien.jpg">Robert Lindsay SANDERSON 1928- m Aileen Patricia O'Bien 1927</a></li>
+						
+						<li><a href="images\Sanderson-Nowak.jpg">Verna Dawn SANDERSON 1931 m Robert NOWAK 1931</a>
+						  <ol>
+						    <li>Peter Edward NOWAK 1953</li>
+							
+							
+							<!--- https://www.facebook.com/jan.green.180 --->
+							
+							
+						    <li>Janette Anne NOWAK 1954 m Christopher John GREEN 1947
+							  <ol>
+								<li>Michelle Jayne 1976</li>
+								<li>Katie Leanne 1977</li>
+								<li>Anthony John 1980</li>
+								<li>Andrew Robert 1981</li>
+								<li>Simon Mark 1984</li>
+								<li>Kylie Michelle 1986</li>
+							  </ol>
+							</li>
+						    <li>Robert Lindsay NOWAK 1956 m Julie Kaye COLLINS 1960
+							    <!--- https://www.facebook.com/jaymeelouise.nowak/friends --->
+								<li>Jaymee Louise 1982</li>
+								<li>Sally-Ann 1984</li>
+							</li>
+						  </ol>
+						</li> <!-- end Verna Dawn SANDERSON - Robert NOWAK -->
+						
+						<li><a href="images\Sanderson-Goodes.jpg">Arthur Murray SANDERSON 1933 m Beverley Sue GOODES 1938</a>
+						  <ol>
+							<!--
+							<a class="screen" href="https://www.facebook.com/Swanfan"
+							target="_blank" rel="noopener noreferrer">
+					        <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					        src="images\blue_16x16.jpg" alt="Click to enlarge">
+					        </a>	
+							-->
+						  
+						    <li>Debra Sue SANDERSON 1958 m Dennis John BARR 1958
+							  <ol>
+								<li>Mellisa Sue 1981</li>
+								<li>Sarah Louise 1984</li>
+								<li>Christopher John 1986</li>
+								<li>Rachael Alice 1990</li>
+							  </ol>
+							</li>
+							
+							<!--
+							<a class="screen" href="https://www.facebook.com/kate.sanderson3"
+							target="_blank" rel="noopener noreferrer">
+					        <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					        src="images\blue_16x16.jpg" alt="Click to enlarge">
+					        </a>	
+							
+							Also : https://www.facebook.com/catherine.sanderson.336
+							From Swansea, United Kingdom
+							
+							-->
+
+						    <li>Cathryn Jane SANDERSON 1961 m Carl-Johan JENSEN 1958
+							  <ol>
+								<li>Eirukur Hogni Sanderson 1988</li>
+								<li>Johan Fridrikur Sanderson 1990</li>
+							  </ol>
+							</li>
+						    <li>Anne Louise SANDERSON 1963 m Gordon Brett STOKES 1961
+							  <ol>
+								<li>Nicholas Andrew 1985</li>
+								<li>Rebekah Sue 1987</li>
+								<li>Timothy Brett 1990</li>
+							  </ol>
+							</li>
+						    <li>Elizabeth Mary SANDERSON 1968 m Name Middlename Surname Birthdate
+							  <ol>
+								<li>Child 1</li>
+								<li>Chiled 2</li>
+							  </ol>
+							</li>
+						  </ol>						
+						</li> <!-- end Arthur Murray SANDERSON - Beverley Sue GOODES -->
+						
+													
+						<!--
+						<a class="screen" href="https://www.facebook.com/jenny.hocking.779"
+						target="_blank" rel="noopener noreferrer">
+					    <img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					    src="images\blue_16x16.jpg" alt="Click to enlarge">
+					    </a>	
+						-->
+						
+						<li><a href="images\Sanderson-Hocking.jpg">Jennifer Beatrice SANDERSON
+						m Keith Ernest HOCKING 1930-1989</a>
+						  <ol>
+							<li>Renee Lesley HOCKING 1962 m Thomas ENGELKE 1962
+							  <ol>
+								<li>Kate Nicole 1990</li>
+							  </ol>
+							</li>
+							<li>Glen Vern HOCKING</li>
+							<li>Gary Ernest HOCKING 1965 m Helen Marie KIRKLAND</li>
+							<li>Denise Jennifer HOCKING 1967 m Kevin CHEESEMAN 1961</li>
+						  </ol>
+						</li> <!-- end Jennifer Beatrice SANDERSON - Keith HOCKING -->
+					
+						<li><a href="images\Sanderson-Charlesworth.jpg">Lesley Christine SANDERSON 1944 m Christopher CHARLESWORTH 1943</a>
+						  <ol>
+							<li>Miriam Jennifer CHARLESWORTH 1965 m Thomas Anthony HUNTER 1961
+							  <ol>
+								<li>Jacqueline Ida 1987</li>
+								<li>Catherine Elizabet 1988</li>
+							  </ol>
+							</li>
+							<li>Stephanie Ruth CHARLESWORTH 1967</li>
+							<li>Natalie Dawn CHARLESWORTH 1970 m Andrew John NELSON 1969
+							  <ol>
+								<li>Alexandra Jade 1988</li>
+							  </ol>
+							</li>
+							<li>Matthew George CHARLESWORTH 1972 </li>
+						  </ol>
+						</li> <!-- end Lesley Christine SANDERSON - Christopher CHARLESWORTH -->
+						
+					  </ol>
+					</li> <!-- end Verner Stuart Leslie SANDERSON - Gertrude SPURLING -->
+					
+					<a class="screen" href="records\olive-extract.pdf">
+					<img STYLE="position:absolute; left:-18px; width = 16; height=16;"
+					src="images\blue_16x16.jpg" alt="Click to enlarge">
+					</a>		
+					
+					<li><a href = "https://gw.geneanet.org/xmullen?lang=en&p=olive+asenath&n=sanderson">Olive Aseneth SANDERSON</a> 11 Jul 1890 - 29 Sep 1946 m <a href="https://www.werelate.org/wiki/Person:Warren_Back_%281%29">Warren BACK</a> 24 Mar 1889 - 18 Jul 1976
+					  <ol>
+						<li>Douglas BACK 1929-1983</li>
+						<li>Mary BACK 1927-1990 m R.Makeham ?</li>
+					  </ol>
+					</li> <!-- end Olive Aseneth SANDERSON- m Warren BACK -->
+					
+				  </ol>
+				</li> <!-- end Francis Clement Villiers SANDERSON - Emma Stanton TORTOISE -->
+			  
+			  </ol>
+			</li> <!-- end Francis SANDERSON - Hanna BROWN -->
+			
+			<li>Jane of Betsay Belan SANDERSON 13 September 1795 – 18 May 1850</li>
+			
+		</ol>
+	  </li> <!-- end George SANDERSON - Sarah SANDERSON -->
+	  
+	  <li>Margaret SANDERSON 1743 – 26 May 1821</li>
+    </ol>  
+  </li>
+</ol>  
+
+</p>
+
+
+<p>
+
+</p>
+
+<br><br><br>
+
+</body>
+
+</html>
